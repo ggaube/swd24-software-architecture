@@ -1,4 +1,4 @@
-# Code for lecture "software Architecture" 
+## Code for lecture "Software Architecture" 
 
 Lab1 lab1-microservice-setup-rest-db
   - task1-service-setup | 14/03
