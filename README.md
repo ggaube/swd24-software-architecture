@@ -1,4 +1,4 @@
-## Code for lecture "Software Architecture" 
+### Code for lecture "Software Architecture" summer 2026
 
 ### lab1-microservice-setup-rest-db | 14/03
   - task1-service-setup 
