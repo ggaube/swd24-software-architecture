@@ -1,0 +1,1 @@
+GET Request for Service A: http://localhost:8888/service-a/default
