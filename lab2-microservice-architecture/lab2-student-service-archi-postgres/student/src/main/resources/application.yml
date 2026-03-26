@@ -1,0 +1,31 @@
+server:
+  port: 8090
+
+spring:
+  config:
+    import:
+      - configserver:http://localhost:8888
+  application:
+    name: student-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/students
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  instance:
+    metadata-map:
+      configPath: /api/v1/students
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

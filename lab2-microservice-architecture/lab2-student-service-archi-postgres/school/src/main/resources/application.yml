@@ -1,0 +1,39 @@
+server:
+  port: 8091
+
+spring:
+  config:
+    import:
+      - configserver:http://localhost:8888
+  application:
+    name: school-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/students
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+application:
+  config:
+    students-url: http://localhost:8090/api/v1/students
+
+studentService:
+  base:
+    url: http://localhost:8090/api/v1/students
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+info:
+  app:
+    name: "School service"
+    version: "1.0.0"
+    description: "saidBoudadMicroservices application"
+

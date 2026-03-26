@@ -1,0 +1,29 @@
+server:
+  port: 5000
+
+spring:
+  config:
+    import:
+      - configserver:http://localhost:8888
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: students
+          uri: http://localhost:8090
+          predicates:
+            - Path=/api/v1/students/**
+        - id: schools
+          uri: http://localhost:8091
+          predicates:
+            - Path=/api/v1/schools/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

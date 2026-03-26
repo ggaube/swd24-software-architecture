@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      import:
+        - configserver:http://localhost:8888
+      name: config-service
+      profile: development
+      label: main
