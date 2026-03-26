@@ -1,14 +1,16 @@
 ## Code for lecture "Software Architecture" 
 
-### lab1-microservice-setup-rest-db
-  - task1-service-setup | 14/03
-  - task2-h2-db | | 14/03
-  - task3-rest-patient-service | | 14/03
-  - task4-rest-mongodb-atlas | 12/06
+### lab1-microservice-setup-rest-db | 14/03
+  - task1-service-setup 
+  - task2-h2-db 
+  - task3-rest-patient-service 
 
-### lab2-microservice-architecture
- - task1-monitoring-client-server | 27/03
- - task2-config-server | 27/03
- - task3-inter-service-com | 27/03
- - lab2-microservice-archi-final | 27/03
+### lab2-microservice-architecture | 27/03
+ - task1-monitoring-client-server 
+ - task2-config-server 
+ - task3-inter-service-com 
+ - lab2-microservice-archi-final 
  - lab2-student-service-archi-postgres (optional for extension)
+
+### lab3-architecture-data-management | 12/06
+ - task4-rest-mongodb-atlas from Lab1
