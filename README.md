@@ -1,6 +1,6 @@
 ## Code for lecture "Software Architecture" 
 
-Lab1 lab1-microservice-setup-rest-db
+###Lab1 lab1-microservice-setup-rest-db
   - task1-service-setup | 14/03
   - task2-h2-db | | 14/03
   - task3-rest-patient-service | | 14/03
