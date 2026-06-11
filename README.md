@@ -12,7 +12,7 @@
  - lab2-microservice-archi-final 
  - lab2-student-service-archi-postgres (optional for extension)
 
-### lab3-architecture-data-management | June26
+### lab3-event-driven-architecture | June26
  - task1-rest-mongodb-atlas
  - task2-event-driven
  - task3-sql-nosql-orchestration
