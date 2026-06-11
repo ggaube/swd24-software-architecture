@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+clients:
+  sql-service:
+    url: http://localhost:8081
+  nosql-service:
+    url: http://localhost:8082
+
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: basic
